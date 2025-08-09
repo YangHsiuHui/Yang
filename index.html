@@ -1,117 +1,123 @@
-<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resume</title>
-<link href="./css/singlePageTemplate.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>楊琇惠 履歷表</title>
+<style>
+  /* A4 紙張大小設定 */
+  @page {
+    size: A4;
+    margin: 20mm 25mm 20mm 25mm;
+  }
+
+  body {
+    font-family: "微軟正黑體", "Noto Sans TC", Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    background: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 210mm; /* A4 寬度 */
+    min-height: 297mm; /* A4 高度 */
+    padding: 25mm;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    color: #003366;
+  }
+
+  h2 {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 8px 0 12px 0;
+    text-indent: 2em;
+  }
+
+  /* 強調文字 */
+  strong {
+    color: #004080;
+  }
+
+  /* 頁尾版權或日期等 (如有需要) */
+  footer {
+    font-size: 9pt;
+    color: #999;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* 列印最佳化 */
+  @media print {
+    body, .container {
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      background: white;
+      width: auto;
+      height: auto;
+    }
+  }
+</style>
 </head>
 <body>
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Navigation -->
-  <header> <a href="">
-    <h4 class="logo">Resume</h4>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="#hero">首頁</a></li>
-        <li><a href="#about">關於</a></li>
-        <li> <a href="#contact">聯繫</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h2 class="hero_header">楊琇惠的履歷</h2>
-    <p class="tagline">我是楊琇惠，目前和父母兄姊同住，熱愛跑步和看書。擅長的程式語言為C、C#、ASP.NET、VB。</p>
-  </section>
-  <!-- About Section -->
-  <section class="about" id="about">
-    <h2 class="hidden">About</h2>
-    <p class="text_column">大同大學學士班的畢業專題，題目：行動導覽系統製作平台，在大學三年級參與行動導覽系統製作平台，我負責的是離線伺服器端的權限設置，以及網頁端PDA借還管理平台。
-	</p>
-    <p class="text_column">臺北科技大學碩士班，我的畢業論文題目是：以GPU和OpenGL視覺化模擬台灣沿海海嘯傳播 。主要是以GPU和OpenGL修飾不規則海浪震波，並且加速模擬效能。
-	</p>
-    <p class="text_column">出社會工作，使用微軟Microsoft技術的ASP.NET撰寫『進銷存貨管理系統』、『集中式目錄人員管理系統』並且撰寫『搜尋管理平台』。
-	</p>
-  </section>
-  <!-- Stats Gallery Section -->
-  <div class="gallery">
-    <div class="thumbnail">
-      <h1 class="stats">在學時期</h1>
-      <h4>大學</h4>
-      <p>&nbsp;&nbsp;我在大學三年級參與行動導覽系統製作平台，我負責的是離線伺服器端的權限設置，以及網頁端PDA借還管理平台。
-	  </p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">在學時期</h1>
-      <h4>研究所</h4>
-      <p>&nbsp;&nbsp;我的論文題目是：以GPU和OpenGL視覺化模擬台灣沿海海嘯傳播 。主要是以GPU和OpenGL修飾不規則海浪震波，並且加速模擬效能。
-	  </p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">工作時期</h1>
-      <h4>工作經驗</h4>
-      <p>&nbsp;&nbsp;出社會工作，使用微軟Microsoft技術的ASP.NET撰寫『進銷存貨管理系統』、『集中式目錄人員管理系統』並且撰寫『搜尋管理平台』。
-	  </p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">工作時期</h1>
-      <h4>ASP.NET</h4>
-      <p>我的撰寫技術著重在ASP.NET的VB和C#程式設計撰寫。
-	  </p>
-    </div>
+  <div class="container">
+    <h1>楊琇惠 履歷表</h1>
+
+    <section>
+      <h2>家庭背景</h2>
+      <p>我是<strong>楊琇惠</strong>，從小出生在一個康樂的家庭，父母對我的教育方式相當多元化，所以培養了我許多的興趣。小時候也因為要強壯身體，所以父母鼓勵我多參加運動練習，使我有耐心和持之以恆的運動家精神。</p>
+    </section>
+
+    <section>
+      <h2>求學歷程</h2>
+      <p>國中小學都是就讀社區附近的學校，所以考上了離家不遠的台北市立華江高級中學就讀。讀的是一般日間部，我對電腦資訊相當感興趣，選擇了第二類理工組就讀。社課活動之餘，理工課業上的學習也沒有少，在學習路程上戰戰兢兢，最後順利完成高中學業，考上自己從小就相當有興趣的資訊工程學系。</p>
+    </section>
+
+    <section>
+      <h2>大學時期－專業深耕</h2>
+      <p>大學從私立大同大學資訊工程學系畢業，期間學習了許多相關基礎程式設計入門。到了大三開始做專題，進行大量的程式磨練，大學專題題目是「行動導覽系統製作平台」，我負責的部分是網頁設計跟資料庫的連接，以及PC端模擬導覽系統，使用的技術相當普遍，做成一個完整的平台，付出了相當的時間跟精力。此外，透過團員之間的溝通協調，幫助我學習到人之間相處的重要。在指導教授<strong>謝尚琳教授</strong>的幫助跟指導下，大學專題經由專題競賽獲得優等的成績。</p>
+    </section>
+
+    <section>
+      <h2>研究所－研究接軌</h2>
+      <p>經過了大學時期的學習以後，發覺學習上的許多不足之處，考上了國立台北科技大學電機系計算機組。圖型識別的研究領域，跟資訊工程相差不遠，我選擇了指導教授<strong>張陽郎教授</strong>，在研究生涯中時常受到教授的幫助跟指導。我的碩士班期間，曾擔任專題生的小助教，傳授電腦圖學上的一些技巧。幫助我在這些經驗中，溝通力跟人際關係、團隊的領導上，有所提升、成長。</p>
+      <p>研究所在臺北科技大學電機所計算機組就讀，因CPU的時脈提升達到了瓶頸，往多核心的GPU領域發展，藉由GPU的平行跟高效能運算，來提升運算。我的論文研究用到的技術有GPU平行運算，以及視覺化即時輸出設計，題目是「以GPU和OpenGL視覺化模擬台灣沿海海嘯傳播」，著重在海嘯巨量資料的運算整理、平行化加速防災倍率三千倍，跟視覺化OpenGL設計以及區域劃分條件的整理設計。</p>
+    </section>
+
+    <section>
+      <h2>畢業後－工作歷練</h2>
+      <p>學校生活研究所畢業後的工作經驗，在全鼎資訊股份有限公司使用ASP.NET的C#跟VB，撰寫進銷存貨管理系統，主要負責廠商、倉庫的資料表程式設計等，製造及生產資訊系統。之後在東祥資訊股份有限公司服務，維護管理介面網頁平台，並且製作網頁人員集中式目錄管理資訊系統。曾服務德欣寰宇股份有限公司進行文件檔案系統平台製作，結合人員管理系統有ASP.NET C# MVC文件檔案的存檔、增加、修改、搜尋等功能，人員進入系統管理的功能。進入社會的工作跟歷練，使我成長學習，也很感恩同事們的提攜跟共識。</p>
+    </section>
+
+    <section>
+      <h2>簡短工作經驗描述</h2>
+      <p>具備2-3年軟體程式設計經驗，專注於Internet程式開發與維護。擅長ASP.NET、C#、MS SQL及相關技術，曾參與多項系統開發，包括文件資安平台、倉儲管理系統、徵授信用卡管理系統及支付工具團隊系統等專案。熟悉網路應用程式的需求分析、設計與測試，並具備資料庫管理與軟體架構維護能力，工作經驗涵蓋多家公司與多樣化專案環境。</p>
+    </section>
+
+    <section>
+      <h2>職涯期許</h2>
+      <p>從職涯對公司、社會到全球有所貢獻的工作。希望通過貴公司完善的教育訓練後，能夠使我在專業知識上有所學習成長外，可以幫助使用者解決問題以及帶給使用者更完美的使用滿意度，為公司跟團隊帶來更大的效益。</p>
+    </section>
+
   </div>
-  <!-- Parallax Section -->
-  <section class="banner">
-    <h2 class="parallax">YangHsiuHui <span class="light">Resume</span></h2>
-    <p class="parallax_description">About My Simple Resume</p>
-  </section>
-  <!-- More Info Section -->
-  <footer>
-    <article class="footer_column">
-      <!--<h3>2020過去履歷</h3>
-      <img src="./images/2020-WEBresume-hsiuhui/20200207-1.jpg" alt="" width="400" height="200" class="cards"/>
-      -->
-      <h3>履歷</h3>
-      <img src="https://drive.google.com/file/d/1Q6Kes53vdJugfvswKZmSklqVg43vW56o/view" alt="" width="200" height="800" class="cards"/>
-      
-      <p>
-	  </p>
-    </article>
-    <article class="footer_column">
-      <h3>相關證照</h3>
-      <img src="./images/2020-WEBresume-hsiuhui/20200207-7.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>多益綠色證照、Score'515
-	  </p>
-    </article>
-	<article class="footer_column">
-      <h3>相關作品</h3>
-      <img src="./images/2020-WEBresume-hsiuhui/20200207-8.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>
-	  </p>
-    </article>
-  </footer>
-  <!-- Footer Section -->
-  <section class="footer_banner" id="contact">
-    <h2 class="hidden">Footer Banner Section </h2>
-    <p class="hero_header">聯絡信息 &amp; 最新資訊</p>
-    <div class="button">9:00-12:00 電子信箱：a20112004@gmail.com</div>
-  </section>
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2025 - <strong>YangHsiuHui Resume</strong></div>
-</div>
-<!-- Main Container Ends -->
 </body>
 </html>

@@ -12,8 +12,10 @@
     nav {
       background-color: #2a5d9f;
       padding: 10px 20px;
-      position: sticky;
+      position: fixed; /* 固定在畫面頂端 */
       top: 0;
+      left: 0;
+      width: 100%; /* 佔滿全寬 */
       z-index: 999;
     }
     nav a {
@@ -33,7 +35,7 @@
     color: #222;
     background: white;
     margin: 0;
-    padding: 0;
+    padding-top: 50px; /* nav 高度 */
   }
 
   .container {
